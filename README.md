@@ -1,2 +1,2 @@
-# music-maker
-music-maker for the codeday 24 hour hackathon
+# world-news-posneg
+Analyzing world news for the codeday 24 hour hackathon
