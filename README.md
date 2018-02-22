@@ -1,6 +1,8 @@
 # World View
 Analyzing world news for the codeday 24 hour hackathon. Received the "Best in Show" award (1st place).
 
+![World View Screenshot](world-view-screenshot.png)
+
 Technologies
 -----------------
 - Python with IBM Watson for sentiment analysis of world news from reddit.com
