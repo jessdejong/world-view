@@ -1,0 +1,312 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+      <style>
+          p{
+            font-family: Helvetica, sans-serif;
+            }
+      </style>
+    <title>Worldview</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <link href="jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="jquery.vmap.js"></script>
+    <script type="text/javascript" src="jquery.vmap.world.js" charset="utf-8"></script>
+    <script type="text/javascript" src="jquery.vmap.sampledata.js"></script>
+    <script type="text/javascript" src="lookup.js"></script>
+    <script>
+      var sample_data = {};
+        var samples = {};
+        samples[""] = "";
+        samples["Passen"] = "-0.409927";
+samples["South "] = "0.650252";
+samples["94% of"] = "0.0";
+samples["Russia"] = "0.0";
+samples["Ex-CIA"] = "0.41587";
+samples["Putin "] = "0.0";
+samples["Rightw"] = "-0.265114";
+samples["Icelan"] = "0.0";
+samples["Too ho"] = "0.43805";
+samples["Crew o"] = "0.0";
+samples["Kangar"] = "-0.800046";
+samples["Real-l"] = "0.653303";
+samples["Court "] = "-0.684635";
+samples["U.S. s"] = "0.0";
+samples["A Carn"] = "0.0";
+samples["Sweden"] = "0.0";
+samples["Fire b"] = "0.0";
+samples["Chines"] = "0.0";
+samples["Poland"] = "-0.337522";
+samples["Irish "] = "0.0";
+samples["Juveni"] = "-0.616058";
+samples["The Br"] = "-0.265968";
+samples["The ta"] = "-0.765841";
+samples["Tremor"] = "-0.441887";
+samples["Facebo"] = "0.0";
+samples["Putin'"] = "-0.533043";
+samples["Hiding"] = "0.0";
+samples["Anger "] = "0.0";
+samples["Hacker"] = "0.28201";
+samples["Meet t"] = "0.0";
+samples["India,"] = "0.0";
+samples["Marry "] = "0.0";
+samples["Outrag"] = "0.0";
+samples["Ahmadr"] = "-0.427098";
+samples["Lost A"] = "0.0";
+samples["For Ru"] = "0.438935";
+samples["Hundre"] = "0.0";
+samples["Scient"] = "0.0";
+samples["Killin"] = "0.0";
+samples["Theres"] = "-0.325655";
+samples["Holdin"] = "0.3313";
+samples["Helico"] = "0.0";
+samples["Public"] = "-0.444216";
+samples["Big On"] = "0.440971";
+samples["Nigeri"] = "-0.416063";
+samples["1,200-"] = "0.0";
+samples["Polish"] = "0.0";
+samples["UK Gov"] = "-0.438627";
+samples["The oi"] = "-0.690309";
+samples["MPs wa"] = "0.0";
+samples["Passen"] = "-0.573259";
+samples["Campai"] = "0.0";
+samples["Russia"] = "0.0";
+samples["‘An En"] = "-0.35321";
+samples["Bank o"] = "0.0";
+samples["China'"] = "-0.519694";
+samples["Hamas "] = "0.0";
+samples["Gaetan"] = "0.376338";
+samples["18 kil"] = "-0.465311";
+samples["Resear"] = "0.0";
+samples["Tremor"] = "-0.441887";
+samples["A form"] = "-0.388732";
+samples["Househ"] = "-0.471811";
+samples["UK Lab"] = "0.0";
+samples["Shaman"] = "0.0";
+samples["BC Lib"] = "-0.283189";
+samples["Thousa"] = "-0.395219";
+samples["Public"] = "-0.417786";
+samples["7.2 Qu"] = "-0.441081";
+samples["Arrest"] = "-0.419113";
+samples["Canadi"] = "0.0";
+samples["18 Ham"] = "-0.707431";
+samples["Myanma"] = "-0.465474";
+samples["South "] = "0.0";
+samples["4 IDF "] = "0.0";
+samples["China’"] = "0.870649";
+samples["Tiller"] = "0.22042";
+samples["South "] = "0.0";
+samples["Japan,"] = "-0.661937";
+samples["Austra"] = "-0.319258";
+samples["High-e"] = "0.0";
+samples["'Crimi"] = "-0.322942";
+samples["Explos"] = "0.0";
+samples["U.S. c"] = "-0.719626";
+samples["U.S. P"] = "-0.867197";
+samples["India,"] = "-0.480916";
+samples["Israel"] = "-0.702629";
+samples["In Swi"] = "-0.59815";
+samples["Juncke"] = "-0.320476";
+samples["Ethiop"] = "-0.653146";
+samples["Passen"] = "-0.409927";
+samples["South "] = "0.650252";
+samples["94% of"] = "0.0";
+samples["Russia"] = "0.0";
+samples["Ex-CIA"] = "0.41587";
+samples["Putin "] = "0.0";
+samples["Rightw"] = "-0.265114";
+samples["Icelan"] = "0.0";
+samples["Too ho"] = "0.43805";
+samples["Crew o"] = "0.0";
+samples["Kangar"] = "-0.800046";
+samples["Real-l"] = "0.653303";
+samples["Court "] = "-0.684635";
+samples["U.S. s"] = "0.0";
+samples["A Carn"] = "0.0";
+samples["Sweden"] = "0.0";
+samples["Fire b"] = "0.0";
+samples["Chines"] = "0.0";
+samples["Poland"] = "-0.337522";
+samples["Irish "] = "0.0";
+samples["Juveni"] = "-0.616058";
+samples["The Br"] = "-0.265968";
+samples["The ta"] = "-0.765841";
+samples["Tremor"] = "-0.441887";
+samples["Facebo"] = "0.0";
+samples["Putin'"] = "-0.533043";
+samples["Hiding"] = "0.0";
+samples["Anger "] = "0.0";
+samples["All 66"] = "-0.325906";
+samples["More t"] = "-0.313649";
+samples["Hacker"] = "0.28201";
+samples["Meet t"] = "0.0";
+samples["India,"] = "0.0";
+samples["Marry "] = "0.0";
+samples["Outrag"] = "0.0";
+samples["Ahmadr"] = "-0.427098";
+samples["Lost A"] = "0.0";
+samples["For Ru"] = "0.438935";
+samples["Hundre"] = "0.0";
+samples["Scient"] = "0.0";
+samples["Killin"] = "0.0";
+samples["Theres"] = "-0.325655";
+samples["Holdin"] = "0.3313";
+samples["Helico"] = "0.0";
+samples["Public"] = "-0.444216";
+samples["Big On"] = "0.440971";
+samples["Nigeri"] = "-0.416063";
+samples["1,200-"] = "0.0";
+samples["Polish"] = "0.0";
+samples["UK Gov"] = "-0.438627";
+samples["The oi"] = "-0.690309";
+samples["MPs wa"] = "0.0";
+samples["Passen"] = "-0.573259";
+samples["Campai"] = "0.0";
+samples["Russia"] = "0.0";
+samples["‘An En"] = "-0.35321";
+samples["Bank o"] = "0.0";
+samples["China'"] = "-0.519694";
+samples["Hamas "] = "0.0";
+samples["Gaetan"] = "0.376338";
+samples["18 kil"] = "-0.465311";
+samples["Resear"] = "0.0";
+samples["Tremor"] = "-0.441887";
+samples["A form"] = "-0.388732";
+samples["Househ"] = "-0.471811";
+samples["UK Lab"] = "0.0";
+samples["Shaman"] = "0.0";
+samples["BC Lib"] = "-0.283189";
+samples["Thousa"] = "-0.395219";
+samples["Public"] = "-0.417786";
+samples["7.2 Qu"] = "-0.441081";
+samples["Arrest"] = "-0.419113";
+samples["Canadi"] = "0.0";
+samples["18 Ham"] = "-0.707431";
+samples["Myanma"] = "-0.465474";
+samples["South "] = "0.0";
+samples["4 IDF "] = "0.0";
+samples["China’"] = "0.870649";
+samples["Tiller"] = "0.22042";
+samples["South "] = "0.0";
+samples["Japan,"] = "-0.661937";
+samples["Austra"] = "-0.319258";
+samples["High-e"] = "0.0";
+samples["'Crimi"] = "-0.322942";
+samples["Explos"] = "0.0";
+samples["U.S. c"] = "-0.719626";
+samples["U.S. P"] = "-0.867197";
+samples["India,"] = "-0.480916";
+samples["Israel"] = "-0.702629";
+samples["In Swi"] = "-0.59815";
+samples["Juncke"] = "-0.320476";
+samples["Ethiop"] = "-0.653146";
+
+        var list = {};
+        var onregion = false;
+        
+      jQuery(document).ready(function () {
+        
+        $.getJSON("https://www.reddit.com/r/worldnews/top.json?sort=top&limit=100", function(data) 
+        {   
+            $.each(data.data.children, function(i,item)
+                   {
+                       //console.log(item);
+                       var title = item.data.title;
+                       var val = "0";
+                       if(title.substring(0,6) in samples)
+                       {
+                           val = samples[title.substring(0,6)];
+                           if(val < 0)
+                               val = -2;
+                           else
+                               val = 2;
+                           console.log(title.substring(0,6)+ " " + val);
+                       }
+                           
+                       var ar = title.split(" ");
+                        code = lookup(title);
+                           if(code != "wow")
+                           {
+                               if(!(code in list))
+                                    list[code] = title;
+                               else
+                                list[code] += "\n" + title;
+                               if(!(code in sample_data))
+                               {
+                                   sample_data[code] = 5+val+"";
+                               }
+                               else
+                               {
+                                   sample_data[code] = parseInt(sample_data[code])+val+"";
+                               }
+                           }
+                       //console.log(item.data.title);
+                   });
+            //console.log(sample_data);
+            
+            var data = "";
+            sample_data["cn"] = "1";
+            var toggle = "";
+            var wegucci = false;;
+
+            jQuery('#vmap').vectorMap({
+              map: 'world_en',
+              backgroundColor: '#333333',
+              color: '#ffffff',
+              hoverOpacity: 0.7,
+              selectedColor: '#666666',
+              enableZoom: true,
+              showTooltip: true,
+              scaleColors: ['#228B22','#ff4d4d'],
+              values: sample_data,
+              normalizeFunction: 'polynomial',
+              onRegionClick: function(event,code,region)
+                {
+                    if(toggle == code)
+                    {
+                        wegucci = false;
+                        $("#mouse").css("opacity", "0");
+                        $("#mouse").css("z-index", "-1");
+                    }
+                    else
+                    {
+                        toggle = code;
+                        wegucci = true;
+                    }
+                },
+              onRegionOver: function(event, code, region)
+                {
+                    onregion = true;
+                    //console.log("in");
+                    
+                    if(list[code].length >= 1)
+                    {
+                        $("#mouse").css("opacity", ".7");
+                        $("#mouse").css("z-index", "2");
+                        $("p").text(list[code]);
+                        $("p").html($("p").html().replace(/\n/g,'<br/><br/>'));
+                    }
+                    
+                },
+              onRegionOut: function(event, code, region)
+                {
+                    if(!wegucci){
+                    $("p").text("Nothing...");
+                    onregion = false;
+                    //console.log("out");
+                    $("#mouse").css("opacity", "0");
+                 $("#mouse").css("z-index", "-1");
+                }   
+                }
+                });
+        });
+      });
+    </script>
+  </head>
+  <body style="margin:0;">
+      <div id="mouse" style="overflow-y: scroll; top: 83%; left: 5%; background: black; width: 500px; height: 225px; position: absolute; z-index: -1; transform: translateX(-50%); transform: translateY(-50%);"><p style="color:white;padding: 10px"></p></div>
+      <div id="avg" style="top: 90%; left: 45%; opacity: 1; width: 500px; height: 100px; position: absolute; z-index: 2; transform: translateX(-50%); transform: translateY(-50%);"><h2 style="color:white;">Today's Average Sentiment: -29%</h2></div>
+    <div id="vmap" style="width: 100%; height: 100%;"></div>  
+  </body>
+</html>
